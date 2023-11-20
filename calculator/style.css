@@ -1,0 +1,108 @@
+body {
+  background-color: #333;
+  font-family: Arial;
+}
+
+.calculator {
+  background-color: rgb(200, 200, 200);
+  width: 24rem;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 0.5rem 0.5rem 2rem black;
+}
+
+.calculator-display {
+  background-color:rgb(215, 215, 215);
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0.5rem;
+  font-size: 2.3rem;
+  text-align: right;
+  text-wrap: wrap;
+  word-wrap:break-word;
+  box-shadow: inset 0.05rem 0.05rem 0.2rem grey;
+  
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5rem 5rem 5rem 5rem 5rem;
+  gap: 0.1rem;
+}
+
+button {
+  border: none;
+}
+
+.calculator-keys button {
+  background-color:darkgrey;
+  font-size: 1.5rem;
+}
+
+.calculator-keys button:hover {
+  background-color: grey;
+}
+
+.calculator-keys .reset:hover, 
+.calculator-keys .delete:hover {
+  background-color:rgb(162, 81, 23);
+}
+
+.calculator-keys .reset {
+  grid-column: span 2;
+  background-color: darkgoldenrod;
+}
+
+.calculator-keys .divide {
+  font-size: 2.3rem;
+}
+
+.calculator-keys .product {
+  font-size: 2.1rem;
+}
+.calculator-keys .enter {
+  font-size: 2.5rem;
+}
+.calculator-keys .minus {
+  font-size: 2.6rem;
+}
+.calculator-keys .plus {
+  font-size: 2rem;
+}
+.calculator-keys .dot {
+  font-size: 2.4rem;
+  padding-bottom: 0.9rem;
+}
+
+.calculator-keys .delete {
+  grid-column: span 1;
+  background-color: darkgoldenrod;
+}
+
+.calculator-keys .enter {
+  background-color:rgb(19, 141, 19);
+}
+
+.calculator-keys .enter:hover {
+  background-color:rgb(24, 170, 24);
+}
+
+.calculator-keys .divide,
+.calculator-keys .product, 
+.calculator-keys .minus,  
+.calculator-keys .plus {
+  background-color: rgb(130, 142, 109);
+} 
+
+.delete {
+  grid-column: span 2;
+}
+
+.calculator [data-state="selected"] {
+  background-color: grey;
+}

@@ -1,0 +1,9 @@
+{
+  "liveServer.settings.root": "/",
+  "liveServer.settings.https": {
+    "enable": true,
+    "cert": "D:/certificate/certificate.pem",
+    "key": "D:/certificate/privatekey.pem",
+    "passphrase": "javascript"
+  }
+}
